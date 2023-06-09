@@ -5,8 +5,6 @@ import  ContactForm  from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
 
 
-
-
 export class App extends React.Component {
 
   state = {
@@ -23,9 +21,9 @@ export class App extends React.Component {
   //відфільтровую контакти і залишаю ті ел. id яких не співпадають
   deleteContact = (contactId) => {
     this.setState(prevState => ({
-      contacts:prevState.contacts.filter(contact=>contact.id !== contactId), 
+      contacts: prevState.contacts.filter(contact => contact.id !== contactId),
     }))
-  }
+  };
   
   
   render() {
@@ -35,12 +33,11 @@ export class App extends React.Component {
         <h1>Phonebook</h1>
         <ContactForm id={this.contactId} />
         <h2>Contacts</h2>
-        <ContactList contacts={contacts} onDeleteContact={this.deleteContact} />
+        <ContactList contacts={contacts}
+          onDeleteContact={this.deleteContact} />
 
       </div>
-    )
-  }
-
+    )}
 }
 
 

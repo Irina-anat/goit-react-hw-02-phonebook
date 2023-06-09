@@ -37,6 +37,6 @@ import css from './ContactForm.module.css'
            </div>
        
        ) }
-}
+};
 
-export default ContactForm
+export default ContactForm;
