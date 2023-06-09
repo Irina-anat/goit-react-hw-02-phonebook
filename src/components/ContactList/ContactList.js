@@ -9,9 +9,9 @@ const ContactList = ({ contacts, onDeleteContact }) => (
                 <p>{name}</p>
                 <p>{number}</p>
 
-                <button onClick={()=>onDeleteContact(id)}>Delete</button>
+                <button onClick={() => onDeleteContact(id)}>Delete</button>
             </li>))}
-    </ul>)
+    </ul>);
     
 
 export default ContactList;
