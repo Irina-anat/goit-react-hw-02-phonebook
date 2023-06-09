@@ -10,7 +10,7 @@ import css from './ContactForm.module.css'
     render() {
         const { id } = this.props;
         return (<div>
-            <form >
+            <form className={css.form}>
     <label>
         Name
         <input 
