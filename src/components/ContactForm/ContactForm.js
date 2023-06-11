@@ -44,8 +44,8 @@ class ContactForm extends React.Component{
         <input 
     type="text"
     name="name"
-    pattern="^[a-zA-Zа-яА-Я\s]+$" 
-    title="Valid Characters: Letters and Spaces in Text"
+    pattern="/^[A-Za-zА-Яа-я]+(?:[-'\s][A-Za-zА-Яа-я]+)*$/" 
+    title="Name may contain only  letters, spaces, hyphens, and apostrophes are allowed"
     required
         value={name}
         onChange={this.handleChange}
