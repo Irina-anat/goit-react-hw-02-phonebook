@@ -45,7 +45,7 @@ class ContactForm extends React.Component{
     type="text"
     name="name"
     pattern="^[a-zA-Zа-яА-Я\s]+$" 
-    title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+    title="Valid Characters: Letters and Spaces in Text"
     required
         value={name}
         onChange={this.handleChange}
@@ -58,7 +58,7 @@ class ContactForm extends React.Component{
        <input type="tel"
     name="number"
     pattern="\+?[0-9\s\-\(\)]+"
-    title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+    title="Valid Phone Number: Optional '+' Symbol, Digits, Spaces, Hyphens, and Parentheses"
     required
         value={number}
         onChange={this.handleChange}

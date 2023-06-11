@@ -78,11 +78,9 @@ export class App extends React.Component {
 };
 
 
-
-
 Notify.init({
-  width: '500px',
-  fontSize: '20px',
+width: '500px',
+fontSize: '20px',
 position: 'center-top',
 closeButton: false,
 });
