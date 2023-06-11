@@ -9,4 +9,10 @@
         padding: 30px;
 }
 
+.notifyjs-wrapper.notifyjs-warning {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
 

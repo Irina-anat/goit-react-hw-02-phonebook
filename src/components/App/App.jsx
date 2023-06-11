@@ -32,7 +32,7 @@ export class App extends React.Component {
 
   this.state.contacts.some(
     contact =>
-      (contact.name.toLowerCase() === lowerCaseName && contact.number === number) || contact.number === number)
+      (contact.name.toLowerCase() === lowerCaseName && contact.number === number) || contact.number === number || contact.name.toLowerCase() === lowerCaseName)
 
   ?  Notify.warning('Контакт з таким іменем або номером вже присутній у телефонній книзі.')
  
@@ -80,8 +80,12 @@ export class App extends React.Component {
 
 
 
-
-
+Notify.init({
+  width: '500px',
+  fontSize: '20px',
+position: 'center-top',
+closeButton: false,
+});
 
 
 

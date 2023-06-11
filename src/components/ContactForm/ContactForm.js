@@ -23,7 +23,7 @@ class ContactForm extends React.Component{
             name: '',
             number: '',
         });
-        this.reset();
+       // this.reset();
     };
 
     inputNameId = nanoid();
