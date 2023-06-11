@@ -15,9 +15,12 @@ input:focus {
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
-css.form {
-    margin-bottom: 20px;
+.form {
+    border-radius: 10px;
+    border: 2px solid #bdbdbd;
+    padding: 20px;
 }
+
 
 label {
     display: flex;
@@ -40,5 +43,6 @@ button {
 
 button:hover,
 button:active {
-    background-color: #d0eb69;
+    background-color: rgba(174, 249, 17, 1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

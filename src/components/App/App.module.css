@@ -1,11 +1,12 @@
 .container__phonebook{
-        width: 600px;
+        width: 500px;
         margin-right: auto;
         margin-left: auto;
-        background: linear-gradient(to right top, #6bd1cb, #63d6c5, #60dbbc, #65dfb0, #70e3a1, #80e695, #92e888, #a4ea7b, #baeb71, #d0eb69, #e5eb63, #fbea5f);
+        background: linear-gradient(90deg, rgba(174, 249, 17, 1) 0%, rgba(41, 249, 17, 1) 39%, rgba(37, 193, 28, 1) 100%);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-bottom: 50px;
         margin-top: 50px;
         padding: 30px;
 }
+
 
