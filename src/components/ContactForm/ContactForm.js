@@ -44,7 +44,7 @@ class ContactForm extends React.Component{
         <input 
     type="text"
     name="name"
-    pattern="/^[A-Za-zА-Яа-я]+(?:[-'\s][A-Za-zА-Яа-я]+)*$/" 
+    pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$" 
     title="Name may contain only  letters, spaces, hyphens, and apostrophes are allowed"
     required
         value={name}
@@ -57,7 +57,7 @@ class ContactForm extends React.Component{
        Number
        <input type="tel"
     name="number"
-    pattern="\+?[0-9\s\-\(\)]+"
+    pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
     title="Valid Phone Number: Optional '+' Symbol, Digits, Spaces, Hyphens, and Parentheses"
     required
         value={number}
